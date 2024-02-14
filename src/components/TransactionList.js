@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
-import { Transaction } from './Transaction'; // Corrected import path
+import { Transaction } from './Transaction'; 
 import { GlobalContext } from '../context/GlobalState';
 
 export const TransactionList = () => {
     const { transactions } = useContext(GlobalContext);
 
-    // Check if transactions is null or undefined before mapping
+   
     if (!transactions) {
-        return null; // Or any other suitable behavior for your application
+        return null;
     }
 
     return (
